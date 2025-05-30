@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Usuario";
+}
+
+<h1>Usuario</h1>
+
+<form>
+    <input type="text" name="nombre" required />
+    <button type="submit">Enviar</button>
+</form>
+
+@if (ViewBag.Mensaje != null)
+{
+    <h3>@ViewBag.Mensaje</h3>
+}

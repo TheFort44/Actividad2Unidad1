@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Calificaciones";
+}
+
+<h1>Calificaciones</h1>
+
+<form method="post">
+    <label>Nota 1:</label>
+    <input type="number" name="nota1" step="any" required /><br />
+
+    <label>Nota 2:</label>
+    <input type="number" name="nota2" step="any" required /><br />
+
+    <label>Nota 3:</label>
+    <input type="number" name="nota3" step="any" required /><br />
+
+    <label>Nota 4:</label>
+    <input type="number" name="nota4" step="any" required /><br />
+
+    <button type="submit">Calcular</button>
+</form>
+
+@if (ViewBag.Resultado != null)
+{
+    <h3>Promedio: @ViewBag.Promedio</h3>
+    <h3>Resultado: @ViewBag.Resultado</h3>
+}

@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<h1>Inicio</h1>
+
+<form method="post">
+    <label>Usuario:</label>
+    <input type="text" name="usuario" required /><br />
+
+    <label>Contraseña:</label>
+    <input type="password" name="contrasena" required /><br />
+
+    <button type="submit">Ingresar</button>
+</form>
+
+@if (ViewBag.Mensaje != null)
+{
+    <h3>@ViewBag.Mensaje</h3>
+}

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "PerfectoONo";
+}
+
+<h1>PerfectoONo</h1>
+
+<form method="post">
+    <label>Ingrese un número:</label>
+    <input type="number" name="numero" required />
+    <button type="submit">Verificar</button>
+</form>
+
+@if (ViewBag.Mensaje != null)
+{
+    <h3>@ViewBag.Mensaje</h3>
+}

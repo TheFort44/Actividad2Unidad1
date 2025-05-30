@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Convertir";
+}
+<h2>Conversor de Moneda</h2>
+
+<form method="post">
+    <label>Monto en DOP:</label>
+    <input type="number" name="monto" step="0.01" required />
+
+    <label>Divisa:</label>
+    <select name="divisa" required>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+    </select>
+
+    <button type="submit">Convertir</button>
+</form>
+
+@if (ViewBag.Resultado != null)
+{
+    <p>Resultado: @ViewBag.Resultado.ToString("N2") @ViewBag.Divisa</p>
+}
